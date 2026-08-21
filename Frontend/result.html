@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroCV — Improved Resume</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <style>
+        .result-page {
+            width: min(1200px, calc(100% - 48px));
+            margin: 40px auto 80px;
+            position: relative;
+            z-index: 2;
+        }
+
+        .result-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 24px;
+            margin-bottom: 28px;
+        }
+
+        .result-header h1 {
+            font-size: 42px;
+            margin: 10px 0;
+            color: #ffffff;
+        }
+
+        .result-header p {
+            color: #cbd5e1;
+            max-width: 700px;
+        }
+
+        .resume-paper {
+            background: #ffffff;
+            color: #111827;
+            border-radius: 16px;
+            padding: 48px;
+            box-shadow: 0 24px 60px rgba(15, 23, 42, 0.25);
+        }
+
+        .resume-name {
+            font-size: 34px;
+            font-weight: 800;
+            color: #111827;
+            margin-bottom: 6px;
+        }
+
+        .resume-contact {
+            color: #475569;
+            font-size: 15px;
+            margin-bottom: 26px;
+            line-height: 1.7;
+        }
+
+        .resume-divider {
+            border: none;
+            border-top: 2px solid #e5e7eb;
+            margin: 18px 0 28px;
+        }
+
+        .resume-section {
+            margin-bottom: 28px;
+        }
+
+        .resume-section h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #111827;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            margin-bottom: 12px;
+            padding-bottom: 6px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .resume-section p,
+        .resume-section li {
+            color: #374151;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+
+        .resume-section ul {
+            margin: 0;
+            padding-left: 20px;
+        }
+
+        .resume-item {
+            margin-bottom: 16px;
+        }
+
+        .resume-item-head {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            gap: 16px;
+            margin-bottom: 6px;
+        }
+
+        .resume-item-head strong {
+            color: #111827;
+            font-size: 16px;
+        }
+
+        .resume-item-head span {
+            color: #64748b;
+            font-size: 14px;
+            white-space: nowrap;
+        }
+
+        .resume-meta {
+            color: #64748b;
+            font-size: 14px;
+            margin-bottom: 6px;
+        }
+
+        .preview-empty {
+            background: #ffffff;
+            color: #64748b;
+            border-radius: 16px;
+            padding: 48px;
+            text-align: center;
+        }
+
+        @media (max-width: 900px) {
+            .result-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .resume-paper {
+                padding: 28px;
+            }
+
+            .resume-item-head {
+                flex-direction: column;
+            }
+        }
+    </style>
+
+
+</head>
+
+<body class="result-body">
+
+
+    <canvas id="particles"></canvas>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <header class="navbar glass">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <img class="logo-img" src="images/logo.png" alt="Logo" />
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="index.html#home">Home</a>
+            <a href="upload.html">Upload</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#technology">AI Technology</a>
+            <a href="index.html#dashboard">Dashboard</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+    </header>
+
+    <main class="result-page">
+
+        <section class="result-header">
+
+            <div>
+                <span class="badge">AI Improved Resume</span>
+                <h1>Your Professional Resume</h1>
+                <p>
+                    This resume is generated from your uploaded resume and improved using AI by correcting grammar,
+                    formatting, sentence structure, professional wording, and ATS optimization.
+                </p>
+            </div>
+
+            <button class="btn primary" onclick="downloadResumePDF()">
+                Download Improved Resume PDF
+            </button>
+
+        </section>
+
+        <section class="resume-paper" id="resumePaper">
+
+            <div id="resumePreview" class="preview-empty">
+                Upload a resume to view the AI-improved professional resume.
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

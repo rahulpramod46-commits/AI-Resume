@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroCV — AI Scanning</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="scan-body">
+
+    <canvas id="particles"></canvas>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <main class="scan-page">
+
+
+        <div class="scan-card glass">
+
+            <div class="scan-ring">
+                <div class="scan-core"></div>
+            </div>
+
+            <h1>AI is Scanning Your Resume</h1>
+
+            <p>
+                Extracting skills, keywords, experience, education, and ATS compatibility
+                using NeuroCV AI Intelligence.
+            </p>
+
+            <div class="progress-container">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <p id="progressText" class="progress-text">
+                Initializing AI Engine...
+            </p>
+
+            <div class="scan-metrics">
+
+                <div class="metric glass">
+                    <strong>Skills</strong>
+                    <span>Detecting...</span>
+                </div>
+
+                <div class="metric glass">
+                    <strong>ATS Score</strong>
+                    <span>Calculating...</span>
+                </div>
+
+                <div class="metric glass">
+                    <strong>Role Match</strong>
+                    <span>Predicting...</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

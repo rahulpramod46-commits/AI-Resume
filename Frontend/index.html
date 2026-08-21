@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroCV — AI Resume Analyzer</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="style.css" />
+
+
+</head>
+
+<body>
+
+
+    <canvas id="particles"></canvas>
+
+    <!-- Background Glow -->
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <!-- Navbar -->
+    <header class="navbar glass">
+
+        <div class="logo">
+            <div class="logo-icon">
+                <img class="logo-img" src="images/logo.png" alt="Logo" />
+            </div>
+        </div>
+
+        <nav class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#features">Features</a>
+            <a href="#technology">AI Technology</a>
+            <a href="#dashboard">Dashboard</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <a href="upload.html" class="nav-btn">Get Started →</a>
+
+    </header>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+
+        <!-- Left -->
+        <div class="hero-left">
+
+            <div class="badge">✨ AI Powered Resume Intelligence</div>
+
+            <h1>
+                The Future of
+                <span>Resume Intelligence</span>
+                Starts Here
+            </h1>
+
+            <p>
+                Analyze your resume with advanced AI, optimize ATS compatibility,
+                discover missing skills, and unlock better career opportunities
+                with real-time insights.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="upload.html" class="btn primary">Launch AI Analyzer</a>
+                <button class="btn primary" id="watchDemoBtn">Watch Live Demo</button>
+            </div>
+
+            <div class="stats">
+
+                <div class="stat-card glass">
+                    <h3>10K+</h3>
+                    <p>Resumes Analyzed</p>
+                </div>
+
+                <div class="stat-card glass">
+                    <h3>94%</h3>
+                    <p>ATS Accuracy</p>
+                </div>
+
+                <div class="stat-card glass">
+                    <h3>2.5x</h3>
+                    <p>Better Shortlist</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="hero-right">
+
+            <div class="dashboard glass">
+
+                <div class="dashboard-header">
+                    <div class="dots">
+                        <span></span><span></span><span></span>
+                    </div>
+                    <p>NeuroCV AI Dashboard</p>
+                </div>
+
+                <div class="holo-grid"></div>
+
+                <div class="resume-card glass">
+
+                    <div class="resume-top">
+                        <div class="avatar"></div>
+                        <div>
+                            <h4>L RAHUL PRAMOD</h4>
+                            <span>Frontend Developer</span>
+                        </div>
+                    </div>
+
+                    <div class="scan-status">
+                        <div class="scan-dot"></div>
+                        <span>Live AI Resume Scan</span>
+                    </div>
+
+                    <div class="ats-circle">
+                        <div class="circle-inner">
+                            <strong>94</strong>
+                            <span>ATS</span>
+                        </div>
+                    </div>
+
+                    <div class="analysis-box glass">
+
+                        <div class="analysis-row">
+                            <span>Skills Detected</span>
+                            <strong>React • Node.js • MongoDB</strong>
+                        </div>
+
+                        <div class="analysis-row">
+                            <span>Missing Keywords</span>
+                            <strong>Docker • AWS • TypeScript</strong>
+                        </div>
+
+                        <div class="analysis-row">
+                            <span>Role Match</span>
+                            <strong>Frontend Developer (96%)</strong>
+                        </div>
+
+                    </div>
+
+                    <div class="scan-progress">
+                        <div class="scan-progress-bar"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Trusted Companies -->
+    <section class="trusted-section">
+
+        <p>TRUSTED BY STUDENTS & DEVELOPERS</p>
+
+        <div class="company-logos">
+            <span>Google</span>
+            <span>Microsoft</span>
+            <span>Amazon</span>
+            <span>Adobe</span>
+            <span>Infosys</span>
+            <span>TCS</span>
+            <span>Capgemini</span>
+        </div>
+
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-section" id="features">
+
+        <div class="section-header">
+
+            <span class="badge">How It Works</span>
+
+            <h2>Analyze Your Resume in 3 Simple Steps</h2>
+
+            <p>
+                Upload your resume, let our AI analyze it, and receive instant ATS
+                optimization and career insights.
+            </p>
+
+        </div>
+
+        <div class="steps-grid">
+
+            <div class="step-card glass">
+                <div class="step-number">01</div>
+                <h3>Upload Resume</h3>
+                <p>Upload your PDF or DOCX resume securely using our AI-powered upload portal.</p>
+            </div>
+
+            <div class="step-card glass">
+                <div class="step-number">02</div>
+                <h3>AI Processing</h3>
+                <p>NeuroCV extracts skills, keywords, education, experience, and ATS compatibility.</p>
+            </div>
+
+            <div class="step-card glass">
+                <div class="step-number">03</div>
+                <h3>Get Insights</h3>
+                <p>Receive ATS score, missing keywords, role match, and personalized AI suggestions.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- AI Technology -->
+    <section class="ai-tech-section" id="technology">
+
+        <div class="ai-left">
+
+            <span class="badge">AI Technology</span>
+
+            <h2>Powered by Advanced Resume Intelligence</h2>
+
+            <p>
+                NeuroCV uses AI-powered resume parsing, ATS optimization, keyword intelligence,
+                and role prediction to help students get shortlisted faster.
+            </p>
+
+            <div class="typing-box glass">
+                <span class="typing-label">Live AI Processing</span>
+                <h3><span id="typing-text"></span><span class="cursor">|</span></h3>
+            </div>
+
+            <div class="tech-list">
+
+                <div class="tech-item glass">
+                    <strong>ATS Optimization</strong>
+                    <span>Improves resume compatibility with recruiter systems</span>
+                </div>
+
+                <div class="tech-item glass">
+                    <strong>Keyword Intelligence</strong>
+                    <span>Detects missing keywords from target job descriptions</span>
+                </div>
+
+                <div class="tech-item glass">
+                    <strong>Role Prediction</strong>
+                    <span>Predicts the most suitable software roles using AI</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="ai-right">
+
+            <div class="brain-card glass">
+
+                <div class="brain-core"></div>
+
+                <div class="brain-ring ring-1"></div>
+                <div class="brain-ring ring-2"></div>
+                <div class="brain-ring ring-3"></div>
+
+                <div class="brain-node node-1"></div>
+                <div class="brain-node node-2"></div>
+                <div class="brain-node node-3"></div>
+                <div class="brain-node node-4"></div>
+                <div class="brain-node node-5"></div>
+                <div class="brain-node node-6"></div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Dashboard Preview -->
+    <section class="dashboard-preview-section" id="dashboard">
+
+        <div class="section-header">
+
+            <span class="badge">Dashboard</span>
+
+            <h2>Real-Time AI Resume Analytics</h2>
+
+            <p>
+                View ATS score, detected skills, missing keywords, and AI optimization insights
+                in a professional recruiter-style dashboard.
+            </p>
+
+        </div>
+
+        <div class="dashboard-preview glass">
+
+            <div class="dashboard-grid">
+
+                <div class="dashboard-item glass">
+                    <h3>ATS Score</h3>
+                    <strong>94%</strong>
+                </div>
+
+                <div class="dashboard-item glass">
+                    <h3>Role Match</h3>
+                    <strong>Frontend Developer</strong>
+                </div>
+
+                <div class="dashboard-item glass">
+                    <h3>Skills Detected</h3>
+                    <strong>React • Node.js • MongoDB</strong>
+                </div>
+
+                <div class="dashboard-item glass">
+                    <h3>Missing Keywords</h3>
+                    <strong>Docker • AWS • TypeScript</strong>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer glass" id="contact">
+
+        <div class="footer-brand">
+
+            <div class="logo-icon">
+                <img class="logo-img" src="images/logo.png" alt="Logo" />
+            </div>
+
+            <div>
+                <h3>NeuroCV</h3>
+                <p>The Future of Resume Intelligence</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Watch Live Demo Modal -->
+    <div id="demoModal" class="demo-modal">
+
+        <div class="demo-content glass">
+
+            <span id="closeDemoBtn" class="close-btn">&times;</span>
+
+            <h2>NeuroCV Live AI Demo</h2>
+
+            <p>See how NeuroCV transforms an ordinary resume into a professional ATS-friendly resume.</p>
+
+            <div class="demo-progress">
+                <div class="demo-progress-bar"></div>
+            </div>
+
+            <div class="demo-step active">📄 Resume Uploaded Successfully</div>
+            <div class="demo-step">🤖 AI Scanning Resume</div>
+            <div class="demo-step">📊 ATS Score: 94%</div>
+            <div class="demo-step">✨ AI Improved Resume Generated</div>
+            <div class="demo-step">⬇️ Professional PDF Ready for Download</div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

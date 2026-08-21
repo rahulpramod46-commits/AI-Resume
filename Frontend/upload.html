@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NeuroCV — Upload Resume</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="upload-body">
+
+    <canvas id="particles"></canvas>
+
+    <div class="bg-glow glow-1"></div>
+    <div class="bg-glow glow-2"></div>
+    <div class="bg-glow glow-3"></div>
+
+    <header class="navbar glass">
+        <div class="logo">
+            <div class="logo-icon">
+                <img class="logo-img" src="images/logo.png" alt="Logo" />
+            </div>
+        </div>
+
+
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#product">Product</a>
+            <a href="index.html#features">Features</a>
+            <a href="index.html#contact">Contact</a>
+        </nav>
+
+
+    </header>
+
+    <main class="upload-page">
+
+
+        <section class="upload-left">
+
+            <span class="badge">AI Resume Intelligence</span>
+
+            <h1>Upload Your Resume</h1>
+
+            <p>
+                Upload your PDF or DOCX resume and let NeuroCV analyze ATS compatibility,
+                skills, keywords, and role match in seconds.
+            </p>
+
+            <div class="upload-features">
+
+                <div class="feature-item glass">
+                    <div class="feature-icon">⚡</div>
+                    <div>
+                        <h3>Instant AI Analysis</h3>
+                        <p>Advanced resume intelligence powered by AI.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item glass">
+                    <div class="feature-icon">📈</div>
+                    <div>
+                        <h3>ATS Optimization</h3>
+                        <p>Improve recruiter screening compatibility.</p>
+                    </div>
+                </div>
+
+                <div class="feature-item glass">
+                    <div class="feature-icon">🎯</div>
+                    <div>
+                        <h3>Career Match</h3>
+                        <p>Find the roles that best fit your profile.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="upload-right">
+
+            <div class="upload-card glass">
+
+                <div class="upload-header">
+                    <h2>Drag & Drop Resume</h2>
+                    <p>Supported formats: PDF, DOC, DOCX</p>
+                </div>
+
+                <label class="dropzone" for="resumeFile">
+
+                    <div class="drop-icon">☁</div>
+
+                    <h3>Choose Resume File</h3>
+
+                    <p>Click here or drag your resume into this area</p>
+
+                    <input type="file" id="resumeFile" accept=".pdf,.doc,.docx" />
+
+                </label>
+
+                <button type="button" class="btn primary upload-btn" onclick="uploadResume()">
+                    Analyze with AI
+                </button>
+
+                <p id="status" class="status-text"></p>
+
+                <div class="privacy-note">
+                    🔒 Your resume is processed securely and never shared.
+                </div>
+
+            </div>
+
+            <div class="mini-dashboard glass">
+
+                <h3>Live AI Preview</h3>
+
+                <div class="preview-row">
+                    <span>ATS Score</span>
+                    <strong>94%</strong>
+                </div>
+
+                <div class="preview-row">
+                    <span>Role Match</span>
+                    <strong>Frontend Developer</strong>
+                </div>
+
+                <div class="preview-row">
+                    <span>Skills</span>
+                    <strong>React • Node.js • MongoDB</strong>
+                </div>
+
+                <div class="preview-progress">
+                    <div class="preview-progress-bar"></div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
